@@ -1,0 +1,47 @@
+---
+---
+@import "minima";
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'urwdin', sans-serif;
+}
+
+header.site-header {
+    background-color: #000;
+
+    * {
+	color: white !important;
+    }
+    
+}
+
+header.site-header, footer.site-footer {
+    border-color: #000;
+}
+
+.site-title {
+    font-family: 'urwdin', sans-serif;
+    color: white !important;;
+}
+
+a:link {
+}
+a:visited {
+}
+
+.category-listing:has(:target) {
+    .category {
+	display: none;
+    }
+    .category:target {
+	display: block;
+    }
+}
+
+body {
+
+
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 40vw;
+}
