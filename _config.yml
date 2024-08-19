@@ -27,6 +27,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
+minima:
+  date_format: "%-d. %-m. %Y, %H:%M"
+show_excerpts: true
+
+
 # Build settings
 theme: minima
 plugins:

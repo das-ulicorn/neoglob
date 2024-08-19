@@ -2,12 +2,17 @@
 ---
 @import "minima";
 
+:root {
+    --site-color: #4a81a0;
+}
+
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'urwdin', sans-serif;
 }
 
 header.site-header {
-    background-color: #000;
+    background-color: var(--site-color);
 
     * {
 	color: white !important;
@@ -16,7 +21,7 @@ header.site-header {
 }
 
 header.site-header, footer.site-footer {
-    border-color: #000;
+    border-color: var(--site-color);
 }
 
 .site-title {
