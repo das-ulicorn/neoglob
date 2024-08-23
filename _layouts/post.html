@@ -14,8 +14,10 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
       {%- if page.tags %}
-        • {{ page.tags | join: "; " }}
-      {%- endif -%}
+          • {% for tag in page.tags %}
+              <a href="{{ '/by-category' | relative_url }}#{{ tag | slugify:'latin' }}">{{ tag }}</a>
+            {% endfor%}
+          {%- endif -%}
     </p>
   </header>
 

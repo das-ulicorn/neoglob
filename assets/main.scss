@@ -3,7 +3,11 @@
 @import "minima";
 
 :root {
-    --site-color: #4a81a0;
+    --site-color: #7e6cab;
+}
+
+.pagination a[href=""] {
+    visibility: hidden;
 }
 
 
